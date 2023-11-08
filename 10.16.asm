@@ -1,0 +1,19 @@
+; print text, char by char 
+.DATA
+ MESSAGE DB "I love my country$"
+.CODE
+START:
+ MOV AX,DATA
+ MOV DS,AX
+
+ LEA SI,MESSAGE
+ MOV CL,11H
+ L1:MOV DX,[SI]
+ MOV AH,02H
+ INT 21H
+ INC SI
+ LOOP L1
+
+ MOV AH,4CH
+ INT 21H
+END START

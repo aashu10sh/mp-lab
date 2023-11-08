@@ -1,0 +1,8 @@
+; 8086 - add 2 number (variant 2)
+MOV SI,2050H
+MOV AL,[SI]
+INC SI
+MOV BL,[SI]
+ADD AL,BL
+MOV 2055H,AL
+HLT

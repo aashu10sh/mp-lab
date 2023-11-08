@@ -1,0 +1,7 @@
+; multiply 2 num - 8 bit
+
+MOV AL,06H
+MOV BL,03H
+MUL BL
+MOV 2055H,AL
+HLT

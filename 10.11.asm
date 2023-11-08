@@ -1,0 +1,8 @@
+; divide 16 bit number
+
+MOV AX,1243H
+MOV BX,0013H
+DIV BX
+MOV 2055H,AL
+MOV 2056H,BL
+HLT

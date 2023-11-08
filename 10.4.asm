@@ -1,0 +1,7 @@
+; 8086 subtact two numbers 
+
+MOV AL,13H
+MOV BL,05H
+SUB AL,BL
+MOV 2050H,AL
+HLT
